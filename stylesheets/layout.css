@@ -1,0 +1,329 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background-image: url("../images/Fon.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: fixed; /* Предотвращает прокрутку более надежно */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.animal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#blue_bird {
+  width: 11vw;
+  height: 11vw;
+  position: relative;
+  top: 2vw; 
+  left: 83vw; 
+}
+#Blue2 {
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -6vw; 
+  left: 83vw; 
+}
+
+#Bull_yellow {
+  width: 18vw;
+  height: 18vw;
+  position: relative;
+  top: 15vw;
+  left: 55vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */
+}
+#Yellow {
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -2vw; 
+  left: 70vw; 
+}
+
+#Deer {
+  position: relative;
+  top: -3vw;
+  left: -5vw;
+  width: 14vw;
+  height: 14vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */
+}
+#Pink {
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -18vw; 
+  left: 6vw; 
+}
+
+#Rabbit2 {
+  position: relative;
+  top: -30vw;
+  left: 40vw;
+  width: 25vw;
+  height: 25vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */
+}
+#Brown {
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -55vw; 
+  left: 53vw; 
+}
+
+#frog {
+  position: relative;
+  top: -27vw;
+  left: 75vw;
+  width: 12vw;
+  height: 12vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */
+}
+#Green {
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -36vw; 
+  left: 83vw; 
+}
+
+#fish {
+  position: relative;
+  top: -38vw;
+  left: 37vw;
+  width: 10vw;
+  height: 10vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */
+}
+#Orange {
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -44vw; 
+  left: 47vw; 
+}
+
+#Rabbit1 {
+  position: relative;
+  top: -50vw;
+  left: 8vw;
+  width: 10vw;
+  height: 10vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */
+}
+#Blue {
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -60vw; 
+  left: 10vw; 
+}
+
+#mouse{
+  position: relative;
+  top: -70vw;
+  left: 20vw;
+  width: 17vw;
+  height: 17vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */ 
+}
+#Purple{
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -85vw; 
+  left: 36vw; 
+}
+
+#fish2{
+  position: relative;
+  top: -117vw;
+  left: 8vw;
+  width: 13vw;
+  height: 13vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */
+}
+#Orange2{
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -128vw; 
+  left: 11vw; 
+}
+
+/* модальное окошко */
+.first_modal, .second_modal, .third_modal, .fourth_modal, .fifth_modal, .sixth_modal, .seventh_modal, .eight_modal, .night_modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+/* модальное окно для птицы */
+.first_modal_content{
+  background-image: url("../images/info6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10vw auto;
+  padding: 2vw;
+  width: 45vw;
+  height: 23vw;
+  text-align: center;
+}
+/* модальное окно для бычка */
+ .second_modal_content{
+  background-image: url("../images/info1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10vw auto;
+  padding: 2vw;
+  width: 43vw;
+  height: 26vw;
+  text-align: center;
+}
+/* модальное окно для оленя */
+.third_modal_content{
+  background-image: url("../images/info3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 8vw auto;
+  padding: 2vw;
+  width: 37vw;
+  height: 30vw;
+  text-align: center;
+}
+/* модальное окно для коричневого зайца */
+.fourth_modal_content{
+  background-image: url("../images/info5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 9vw auto;
+  padding: 2vw;
+  width: 38vw;
+  height: 31vw;
+  text-align: center;
+}
+/* модальное окно для лягушки */
+.fifth_modal_content{
+  background-image: url("../images/info7.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10vw auto;
+  padding: 2vw;
+  width: 43vw;
+  height: 23vw;
+  text-align: center;
+}
+/* модальное окно для оранжевой рыбы */
+.sixth_modal_content {
+  background-image: url("../images/info8.svg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10vw auto;
+  padding: 2vw;
+  width: 41vw; 
+  height: 21vw; 
+  text-align: center;
+}
+/* модальное окно для кролика русалки */
+.seventh_modal_content {
+  background-image: url("../images/info2.svg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 8vw auto;
+  padding: 2vw;
+  width: 43vw; 
+  height: 33vw; 
+  text-align: center;
+}
+/* модальное окно для мышки */
+.eight_modal_content{
+  background-image: url("../images/info4.svg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10vw auto;
+  padding: 2vw;
+  width: 41vw; 
+  height: 21vw; 
+  text-align: center; 
+}
+/* модальное окно для рыбы второй */
+.night_modal_content{
+  background-image: url("../images/info9.svg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10vw auto;
+  padding: 2vw;
+  width: 31.5vw; 
+  height: 24.5vw; 
+  text-align: center; 
+}
+/* экран для мобьных устройств */
+.adaptive {
+  height: 150vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  display: none;
+}
+.rect {
+  width: 38vw;
+  height: 5.4vw;
+  border: 2px solid black;
+  background-color: white;
+}
+.rect p {
+  margin-top: 1vw;
+  text-align: center;
+}
+
+/* По умолчанию скрываем секцию с животными на мобильных устройствах */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .animal {
+      display: none;
+  }
+  .adaptive {
+      display: block;
+  }
+}
+
+/* При горизонтальной ориентации показываем секцию с животными */
+@media screen and (orientation: landscape) {
+  .animal {
+      display: block;
+  }
+  .adaptive {
+      display: none;
+  }
+}
